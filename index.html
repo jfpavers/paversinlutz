@@ -5,135 +5,201 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pavers in Lutz | Luxury Driveways, Patios & Pool Deck Installation</title>
+<title>Pavers in Lutz | Driveways, Patios, Pool Decks | Tampa Bay</title>
 
-<meta name="description" content="Pavers in Lutz provides luxury driveway, patio, pool deck and outdoor living installation. Serving Lutz, Wesley Chapel and Land O Lakes. Call (727) 280-3019">
+<meta name="description" content="Pavers in Lutz specializes in luxury driveway, patio, pool deck, walkway, retaining wall and paver sealing installation in Lutz, Wesley Chapel, Land O Lakes and Tampa Bay. Call 727-280-3019.">
 
-
+<link rel="stylesheet" href="styles.css">
 
 <style>
 
-/* fallback styles in case css doesn't load */
+/* RESET */
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
-color:#0B1B3A;
+font-family:Arial, Helvetica, sans-serif;
+color:#1F2937;
+background:white;
 }
 
+/* HEADER */
+
 .header{
-background:white;
-padding:15px 30px;
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-border-bottom:1px solid #eee;
+padding:16px 40px;
+background:white;
+box-shadow:0 2px 6px rgba(0,0,0,0.08);
+
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+
 }
 
 .logo{
-height:55px;
+
+height:60px;
+
 }
 
 .nav a{
-margin-left:20px;
+
+margin-left:28px;
 text-decoration:none;
-font-weight:bold;
-color:#0B1B3A;
+color:#1F2937;
+font-weight:600;
+
 }
 
+.nav a:hover{
+
+color:#A4D65E;
+
+}
+
+/* HERO */
+
 .hero{
+
 position:relative;
-height:550px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
+height:600px;
+margin-top:90px;
+
 }
 
 .hero img{
-position:absolute;
+
 width:100%;
-height:100%;
+height:600px;
 object-fit:cover;
-top:0;
-left:0;
-z-index:0;
+
 }
 
 .hero-overlay{
+
 position:absolute;
+top:0;
+left:0;
 width:100%;
 height:100%;
-background:rgba(11,27,58,0.55);
-z-index:1;
+background:rgba(0,0,0,0.45);
+
 }
 
 .hero-content{
-position:relative;
-z-index:2;
+
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+text-align:center;
+
 }
 
-.hero h1{
+.hero-content h1{
+
 font-size:52px;
-margin-bottom:10px;
+margin-bottom:12px;
+
 }
 
-.hero p{
+.hero-content p{
+
 font-size:20px;
-margin-bottom:20px;
+margin-bottom:24px;
+
 }
 
 .btn{
+
 background:#A4D65E;
-color:#0B1B3A;
-padding:15px 30px;
-border-radius:30px;
-font-weight:bold;
+color:#1F2937;
+padding:16px 32px;
+border-radius:40px;
 text-decoration:none;
+font-weight:bold;
+font-size:18px;
+
 }
 
+/* SERVICES */
+
 .services{
-padding:60px 30px;
+
+padding:80px 40px;
 text-align:center;
+
+}
+
+.services h2{
+
+font-size:32px;
+margin-bottom:40px;
+
 }
 
 .grid{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
+gap:30px;
+
 }
 
 .card{
-position:relative;
-height:220px;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+border-radius:10px;
 overflow:hidden;
-border-radius:12px;
+
 }
 
 .card img{
+
 width:100%;
-height:100%;
+height:200px;
 object-fit:cover;
+
 }
 
-.card-title{
-position:absolute;
-bottom:0;
-width:100%;
-background:rgba(11,27,58,0.8);
-color:white;
-padding:10px;
-font-weight:bold;
+.card h3{
+
+padding:20px;
+
 }
 
-.footer{
+/* CTA */
+
+.cta{
+
 background:#0B1B3A;
 color:white;
-padding:30px;
+padding:60px;
 text-align:center;
-margin-top:40px;
+
+}
+
+.cta a{
+
+margin-top:20px;
+display:inline-block;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+background:#0B1B3A;
+color:white;
+text-align:center;
+padding:30px;
+
 }
 
 </style>
@@ -141,20 +207,19 @@ margin-top:40px;
 </head>
 
 <body>
-<div style="background:#A4D65E;padding:16px;font-weight:900;">
-LOGO TEST:
-<br>
-<img src="assets/logo.png" style="height:120px;border:4px solid red;background:white;padding:6px;">
-</div>
+
+
 <header class="header">
 
-<img src="logo.png" class="logo" alt="Pavers in Lutz Logo">
+<img src="assets/logo.png" class="logo" alt="Pavers in Lutz Logo">
 
 <nav class="nav">
+
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
+
 </nav>
 
 </header>
@@ -179,75 +244,71 @@ LOGO TEST:
 </section>
 
 
-
 <section class="services">
 
 <h2>Our Services</h2>
 
 <div class="grid">
 
-
 <div class="card">
 <img src="assets/IMG_3662.jpeg">
-<div class="card-title">Driveways</div>
+<h3>Driveways</h3>
 </div>
-
 
 <div class="card">
 <img src="assets/IMG_3177.jpeg">
-<div class="card-title">Patios</div>
+<h3>Patios</h3>
 </div>
-
 
 <div class="card">
 <img src="assets/IMG_3326.jpeg">
-<div class="card-title">Pool Decks</div>
+<h3>Pool Decks</h3>
 </div>
-
 
 <div class="card">
 <img src="assets/IMG_6956.jpeg">
-<div class="card-title">Walkways</div>
+<h3>Walkways</h3>
 </div>
-
 
 <div class="card">
 <img src="assets/IMG_3358.jpeg">
-<div class="card-title">Retaining Walls</div>
+<h3>Retaining Walls</h3>
 </div>
-
 
 <div class="card">
 <img src="assets/IMG_3344.jpeg">
-<div class="card-title">Fire Pits</div>
+<h3>Fire Pits</h3>
 </div>
-
 
 <div class="card">
 <img src="assets/IMG_9904.jpeg">
-<div class="card-title">Paver Sealing</div>
+<h3>Paver Sealing</h3>
 </div>
-
 
 </div>
 
 </section>
 
 
+<section class="cta">
+
+<h2>Serving Lutz, Wesley Chapel, Land O Lakes and Tampa Bay</h2>
+
+<a href="contact.html" class="btn">Request Free Estimate</a>
+
+</section>
+
 
 <footer class="footer">
 
-<h3>Pavers in Lutz</h3>
+<p>Pavers in Lutz</p>
 
-<p>Luxury Outdoor Living Installation</p>
+<p>Call 727-280-3019</p>
 
-<p>(727) 280-3019</p>
-
-<p>Serving Lutz, Wesley Chapel, Land O Lakes and beyond</p>
+<p>contact@jfpavers.com</p>
 
 </footer>
 
 
 </body>
-
 </html>
